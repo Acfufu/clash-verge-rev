@@ -104,6 +104,7 @@
           "dnsOverwrite": "DNS Üzerine Yazma",
           "ipv6": "IPv6",
           "unifiedDelay": "Birleşik Gecikme",
+          "tcpConcurrent": "Eşzamanlı TCP",
           "logLevel": "Günlük Seviyesi",
           "portConfig": "Port Yapılandırması",
           "external": "Harici",
@@ -139,6 +140,7 @@
         "tooltips": {
           "networkInterface": "Ağ Arayüzü",
           "unifiedDelay": "Birleşik gecikme açıldığında, bağlantı el sıkışmaları vb. nedeniyle farklı tür düğümler arasındaki gecikme farklarını ortadan kaldırmak için iki gecikme testi gerçekleştirilir",
+          "tcpConcurrent": "Eşzamanlı TCP açıldığında, hedef alan adının tüm IP adreslerine eşzamanlı bağlantı denenir ve bağlantı en düşük gecikmeli IP ile kurulur",
           "logLevel": "Bu parametre yalnızca günlük dizini Hizmet klasöründeki çekirdek günlük dosyaları için geçerlidir",
           "openUwpTool": "Windows 8'den beri, UWP uygulamaları (Microsoft Store gibi) yerel ana bilgisayar ağ hizmetlerine doğrudan erişmekten kısıtlanmıştır ve bu araç bu kısıtlamayı atlatmak için kullanılabilir"
         },

@@ -104,6 +104,7 @@
           "dnsOverwrite": "Sobrescritura de DNS",
           "ipv6": "IPv6",
           "unifiedDelay": "Latencia unificada",
+          "tcpConcurrent": "Concurrencia TCP",
           "logLevel": "Nivel de registro",
           "portConfig": "Configuración de puerto",
           "external": "Control externo",
@@ -139,6 +140,7 @@
         "tooltips": {
           "networkInterface": "Interfaz de red",
           "unifiedDelay": "Al habilitar la latencia unificada, se realizarán dos pruebas de latencia para eliminar las diferencias de latencia entre diferentes tipos de nodos causadas por el handshake de conexión, etc.",
+          "tcpConcurrent": "Al habilitar la concurrencia TCP, se conectarán simultáneamente todas las direcciones IP del dominio de destino y se utilizará la de menor latencia para establecer la conexión.",
           "logLevel": "Solo se aplica al archivo de registro del núcleo en la carpeta Service del directorio de registros.",
           "openUwpTool": "A partir de Windows 8, las aplicaciones UWP (como la Tienda de Microsoft) tienen restricciones para acceder directamente a los servicios de red del host local. Use esta herramienta para evitar esta restricción."
         },

@@ -52,6 +52,7 @@ const SettingClash = ({ onError }: Props) => {
     'allow-lan': allowLan,
     'log-level': logLevel,
     'unified-delay': unifiedDelay,
+    'tcp-concurrent': tcpConcurrent,
   } = clash ?? {}
 
   const [dnsConfirmation, setDnsConfirmation] = useState<{
@@ -238,6 +239,28 @@ const SettingClash = ({ onError }: Props) => {
           onFormat={onSwitchFormat}
           onChange={(e) => onChangeData({ 'unified-delay': e })}
           onGuard={(e) => patchClash({ 'unified-delay': e })}
+        >
+          <Switch edge="end" />
+        </GuardState>
+      </SettingItem>
+
+      <SettingItem
+        data-setting-target="settings.sections.clash.form.fields.tcpConcurrent"
+        label={t('settings.sections.clash.form.fields.tcpConcurrent')}
+        extra={
+          <TooltipIcon
+            title={t('settings.sections.clash.form.tooltips.tcpConcurrent')}
+            sx={{ opacity: '0.7' }}
+          />
+        }
+      >
+        <GuardState
+          value={tcpConcurrent ?? false}
+          valueProps="checked"
+          onCatch={onError}
+          onFormat={onSwitchFormat}
+          onChange={(e) => onChangeData({ 'tcp-concurrent': e })}
+          onGuard={(e) => patchClash({ 'tcp-concurrent': e })}
         >
           <Switch edge="end" />
         </GuardState>

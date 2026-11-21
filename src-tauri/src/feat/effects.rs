@@ -137,6 +137,7 @@ pub(super) fn clash_effects(patch: &serde_yaml_ng::Mapping) -> Effects {
         effects.extend(match key.as_str() {
             Some("secret" | "external-controller") => &[Effect::RestartCore][..],
             Some("allow-lan") => &[Effect::ClashConfig][..],
+            Some("tcp-concurrent") => &[Effect::ClashConfig][..],
             Some("mode") => &[Effect::ClashConfig, Effect::TrayMenu, Effect::TrayIcon][..],
             _ => {
                 logging!(
@@ -260,7 +261,7 @@ mod tests {
 
     #[test]
     fn clash_keys_map_to_frozen_effects() {
-        let cases: [(serde_yaml_ng::Mapping, &[Effect]); 7] = [
+        let cases: [(serde_yaml_ng::Mapping, &[Effect]); 8] = [
             (clash_mapping(&[]), &[Effect::ClashConfig]),
             (clash_mapping(&[("secret", "s")]), &[Effect::RestartCore]),
             (
@@ -268,6 +269,7 @@ mod tests {
                 &[Effect::ClashConfig, Effect::TrayIcon, Effect::TrayMenu],
             ),
             (clash_mapping(&[("allow-lan", "true")]), &[Effect::ClashConfig]),
+            (clash_mapping(&[("tcp-concurrent", "true")]), &[Effect::ClashConfig]),
             (clash_mapping(&[("not-a-known-key", "1")]), &[Effect::ClashConfig]),
             // Restart supersedes reload; allow-lan precedes mode.
             (

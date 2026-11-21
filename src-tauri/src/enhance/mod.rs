@@ -319,6 +319,7 @@ const CONTROL_PLANE_KEYS: &[&str] = &[
     "log-level",
     "ipv6",
     "unified-delay",
+    "tcp-concurrent",
 ];
 
 /// App-owned fields: captured after the app derives them, enforced after every override.

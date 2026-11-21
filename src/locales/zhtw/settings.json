@@ -104,6 +104,7 @@
           "dnsOverwrite": "DNS 覆寫",
           "ipv6": "IPv6",
           "unifiedDelay": "統一延遲",
+          "tcpConcurrent": "TCP 並行",
           "logLevel": "日誌等級",
           "portConfig": "連接埠設定",
           "external": "外部控制",
@@ -139,6 +140,7 @@
         "tooltips": {
           "networkInterface": "網路介面",
           "unifiedDelay": "開啟統一延遲時，會進行兩次延遲測試，以消除連線握手等帶來的不同類型節點的延遲差異",
+          "tcpConcurrent": "開啟 TCP 並行時，會對目標網域的所有 IP 進行並行連線，並使用延遲最低的 IP 建立連線",
           "logLevel": "僅對日誌目錄 Service 資料夾下的內核日誌檔案生效",
           "openUwpTool": "Windows 8 開始限制 UWP 應用程式（如Microsoft Store）直接存取本機主機的網路服務，使用此工具可繞過該限制"
         },

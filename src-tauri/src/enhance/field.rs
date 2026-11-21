@@ -1,7 +1,7 @@
 use serde_yaml_ng::{Mapping, Value};
 use tristr::alias::String;
 
-pub const HANDLE_FIELDS: [&str; 12] = [
+pub const HANDLE_FIELDS: [&str; 13] = [
     "mode",
     "redir-port",
     "tproxy-port",
@@ -14,6 +14,7 @@ pub const HANDLE_FIELDS: [&str; 12] = [
     "external-controller",
     "secret",
     "unified-delay",
+    "tcp-concurrent",
 ];
 
 pub const DEFAULT_FIELDS: [&str; 5] = ["proxies", "proxy-providers", "proxy-groups", "rule-providers", "rules"];

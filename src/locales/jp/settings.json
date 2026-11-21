@@ -104,6 +104,7 @@
           "dnsOverwrite": "DNS上書き",
           "ipv6": "IPv6",
           "unifiedDelay": "統一遅延",
+          "tcpConcurrent": "TCP 同時接続",
           "logLevel": "ログレベル",
           "portConfig": "ポート設定",
           "external": "外部制御",
@@ -139,6 +140,7 @@
         "tooltips": {
           "networkInterface": "ネットワークインターフェース",
           "unifiedDelay": "統一遅延を有効にすると、2回の遅延テストが行われ、接続ハンドシェイクなどによる異なるタイプのノードの遅延差を解消します。",
+          "tcpConcurrent": "TCP 同時接続を有効にすると、接続先ドメインのすべての IP に同時に接続を試み、遅延が最も低い IP を使用して接続を確立します。",
           "logLevel": "ログディレクトリのServiceフォルダ内のコアログファイルにのみ適用されます。",
           "openUwpTool": "Windows 8以降では、UWPアプリケーション（Microsoft Storeなど）がローカルホストのネットワークサービスに直接アクセスすることが制限されています。このツールを使用すると、この制限を回避できます。"
         },

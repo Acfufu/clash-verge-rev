@@ -104,6 +104,7 @@
           "dnsOverwrite": "DNS 覆写",
           "ipv6": "IPv6",
           "unifiedDelay": "统一延迟",
+          "tcpConcurrent": "TCP 并发",
           "logLevel": "日志等级",
           "portConfig": "端口设置",
           "external": "外部控制",
@@ -139,6 +140,7 @@
         "tooltips": {
           "networkInterface": "网络接口",
           "unifiedDelay": "开启统一延迟时，会进行两次延迟测试，以消除连接握手等带来的不同类型节点的延迟差异",
+          "tcpConcurrent": "开启 TCP 并发时，会对目标域名的所有 IP 并发拨号，并使用延迟最低的 IP 建立连接",
           "logLevel": "仅对日志目录 Service 文件夹下的内核日志文件生效",
           "openUwpTool": "Windows 8 开始限制 UWP 应用（如微软商店）直接访问本地主机的网络服务，使用此工具可绕过该限制"
         },

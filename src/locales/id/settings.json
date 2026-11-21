@@ -104,6 +104,7 @@
           "dnsOverwrite": "DNS Overwrite",
           "ipv6": "IPv6",
           "unifiedDelay": "Keterlambatan Terpadu",
+          "tcpConcurrent": "Konkurensi TCP",
           "logLevel": "Tingkat Log",
           "portConfig": "Konfigurasi Port",
           "external": "Eksternal",
@@ -139,6 +140,7 @@
         "tooltips": {
           "networkInterface": "Antarmuka Jaringan",
           "unifiedDelay": "Saat keterlambatan terpadu diaktifkan, dua tes keterlambatan akan dilakukan untuk menghilangkan perbedaan keterlambatan antara berbagai jenis node yang disebabkan oleh jabat tangan koneksi, dll.",
+          "tcpConcurrent": "Saat konkurensi TCP diaktifkan, semua alamat IP dari domain tujuan akan dihubungi secara bersamaan dan yang memiliki latensi terendah akan digunakan untuk membuat koneksi.",
           "logLevel": "Ini hanya berlaku untuk file log kernel di folder layanan di direktori log.",
           "openUwpTool": "Sejak Windows 8, aplikasi UWP (seperti Microsoft Store) dibatasi dari mengakses layanan jaringan host lokal secara langsung, dan alat ini dapat digunakan untuk melewati pembatasan ini"
         },

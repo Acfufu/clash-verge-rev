@@ -302,6 +302,7 @@ const settingsCatalog: readonly SettingEntry[] = [
   ...group(clash, {
     'settings.sections.clash.form.fields.ipv6': 'ipv6 ',
     'settings.sections.clash.form.fields.unifiedDelay': 'unified delay ',
+    'settings.sections.clash.form.fields.tcpConcurrent': 'tcp concurrent ',
     'settings.sections.clash.form.fields.logLevel': 'log level ',
     'settings.sections.clash.form.fields.portConfig': 'port config ',
   }),

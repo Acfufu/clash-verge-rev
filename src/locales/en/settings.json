@@ -104,6 +104,7 @@
           "dnsOverwrite": "DNS Overwrite",
           "ipv6": "IPv6",
           "unifiedDelay": "Unified Delay",
+          "tcpConcurrent": "TCP Concurrent",
           "logLevel": "Log Level",
           "portConfig": "Port Config",
           "external": "External",
@@ -139,6 +140,7 @@
         "tooltips": {
           "networkInterface": "Network Interface",
           "unifiedDelay": "When unified delay is turned on, two delay tests will be performed to eliminate the delay differences between different types of nodes caused by connection handshakes, etc",
+          "tcpConcurrent": "When TCP concurrent is turned on, all IP addresses of the target domain will be dialed concurrently and the lowest-latency one will be used to establish the connection",
           "logLevel": "This parameter is valid only for kernel log files in the log directory Service folder",
           "openUwpTool": "Since Windows 8, UWP apps (such as Microsoft Store) are restricted from directly accessing local host network services, and this tool can be used to bypass this restriction"
         },
